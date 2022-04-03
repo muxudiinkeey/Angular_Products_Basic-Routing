@@ -7,9 +7,9 @@ import { AppComponent } from './app.component';
 import { AbouteComponent } from './aboute/aboute.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { CoursesComponent } from './courses/courses.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CourseComponent } from './course/course.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { CourseComponent } from './course/course.component';
     ContactComponent,
     HomeComponent,
     PageNotFoundComponent,
-    CoursesComponent,
-    CourseComponent,
+    ProductsComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

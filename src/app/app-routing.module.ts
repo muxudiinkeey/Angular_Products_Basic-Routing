@@ -3,29 +3,23 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AbouteComponent } from './aboute/aboute.component';
 import { ContactComponent } from './contact/contact.component';
-import { CourseComponent } from './course/course.component';
-import { CoursesComponent } from './courses/courses.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductComponent } from './product/product.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-  {path: '' , redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'aboute', component:AbouteComponent},
-  {path: 'contact', component:ContactComponent},
-   {path: 'courses', component:CoursesComponent},
- /*  {path: 'course', children: [
-    {path: 'course/:id', component:CoursesComponent}
-  ]},
- */
-
-  
-  {path: '**', component:PageNotFoundComponent},
-
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'aboute', component: AbouteComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'products', component: ProductsComponent},
+  { path: 'product/:id', component: ProductComponent},
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
